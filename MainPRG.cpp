@@ -44,11 +44,16 @@ void complexProcess() {
 
     cout << "So phuc dau tien: " << a << "\n";
     cout << "So phuc thu hai: " << b << "\n";
+    cout << "Module cua " << a << " = " << a.module() << '\n';
+    cout << "Module cua " << b << " = " << b.module() << '\n';
     cout << "Cac phep tinh tren so phuc\n";
-    cout << a << " + " << b << " = " << a + b << '\n';
-    cout << a << " - " << b << " = " << a - b << '\n';
-    cout << a << " * " << b << " = " << a * b << '\n';
-    cout << a << " / " << b << " = " << a / b << '\n';
+    cout << '(' << a << ") + (" << b << ") = " << a + b << '\n';
+    cout << '(' << a << ") - (" << b << ") = " << a - b << '\n';
+    cout << '(' << a << ") * (" << b << ") = " << a * b << '\n';
+    if (b.getImg() && b.getReal())
+        cout << '(' << a << ") / (" << b << ") = " << a / b << '\n';
+    else
+        cout << "Cannot divided by zero!\n";
 }
 int main()
 {
