@@ -1,20 +1,5 @@
 #include "Complex.h"
 
-void Complex::inputComplex()
-{
-	cout << "Type real part: "; cin >> real;
-	cout << "Type imaginary part: "; cin >> img;
-}
-
-void Complex::outputComplex()
-{
-	cout << real;
-	if (img < 0)
-		cout << " - " << abs(img) << "i";
-	else
-		cout << " + " << img << "i";
-}
-
 double Complex::getReal() const
 {
 	return real;
@@ -35,9 +20,16 @@ void Complex::setReal(double r)
 	real = r;
 }
 
-void Complex::setImg(double img)
+void Complex::setImg(double i)
 {
-	this->img = img;
+	img = i;
+}
+
+double Complex::module()
+{
+	double real = this->getReal();
+	double img = this->getImg();
+	return sqrt(real * real + img * img);	
 }
 
 Complex Complex::operator+(Complex & a)
