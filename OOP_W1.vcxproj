@@ -142,7 +142,7 @@
   <ItemGroup>
     <ClCompile Include="Complex.cpp" />
     <ClCompile Include="Fract.cpp" />
-    <ClCompile Include="MainFract.cpp" />
+    <ClCompile Include="MainPRG.cpp" />
     <ClCompile Include="Mono.cpp" />
   </ItemGroup>
   <ItemGroup>
