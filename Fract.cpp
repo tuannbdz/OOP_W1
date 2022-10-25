@@ -1,4 +1,5 @@
 #include "Fract.h"
+
 int gcd(int a, int b) {
     if (!b)
         return a;

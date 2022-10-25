@@ -1,19 +1,27 @@
 #pragma once
 
 #include <iostream>
+#include <cstdlib> //abs
 using namespace std; 
-
 
 class Complex
 {
-	int real, img;
+	double real, img;
 public: 
 	Complex():real(0), img(0){}
-	Complex(int r, int i):real(r), img(i){}
-	int getReal(); 
-	int getImg(); 
-	void setReal(); 
-	void setImg(); 
-	//friend Complex operator+(Complex&, Complex&); 
+	Complex(double r, double i):real(r), img(i){}
+	void inputComplex(); 
+	void outputComplex(); 
+	double getReal() const; 
+	double getImg() const;
+	void setReal(double); 
+	void setImg(double); 
+	void setComplex(double, double); 
 };
 
+ostream& operator<<(ostream&, const Complex&);
+istream& operator>>(istream&, Complex&);
+Complex operator-(Complex&, Complex&);
+Complex operator+(Complex&, Complex&);
+Complex operator*(Complex&, Complex&);
+Complex operator/(Complex&, Complex&);

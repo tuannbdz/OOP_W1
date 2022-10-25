@@ -27,12 +27,6 @@
     <ClCompile Include="Mono.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainComplex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MainMono.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fract.h">
